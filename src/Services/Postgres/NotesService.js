@@ -29,7 +29,7 @@ class NotesService {
     return result.rows[0].id;
   }
 
-  async getNotes() {
+  async getNotes(owner) {
     // mencari data bedasarkan owner
     const query = {
       text: 'SELECT * FROM notes WHERE owner = $1',

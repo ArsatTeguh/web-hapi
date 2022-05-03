@@ -1,7 +1,7 @@
 const ClientError = require('../../Excption/clientError');
 
 class AuthenticationsHandler {
-  constructor(authenticationsService, usersService, tokenManager, validator) {
+  constructor({ authenticationsService, usersService, tokenManager, validator }) {
     this._authenticationsService = authenticationsService;
     this._usersService = usersService;
     this._tokenManager = tokenManager;
